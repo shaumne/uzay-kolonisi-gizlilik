@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Space Colony: Idle — Pitch Deck</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+  :root { --bg:#150f1e; --panel:#1f1730; --ink:#f3ecff; --dim:#b9aed0; --acc:#ffb347; --acc2:#6fd3ff; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:#0b0812; color:var(--ink); font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .slide { width:13.333in; height:7.5in; margin:0 auto 24px; background:var(--bg); position:relative; overflow:hidden; page-break-after:always; break-after:page; padding:0.55in 0.7in; display:flex; flex-direction:column; }
+  .slide:last-child { page-break-after:auto; break-after:auto; }
+  h1 { font-size:54px; margin:0 0 8px; letter-spacing:-0.5px; }
+  h2 { font-size:36px; margin:0 0 18px; color:var(--acc); }
+  h3 { font-size:20px; margin:0 0 6px; color:var(--acc2); text-transform:uppercase; letter-spacing:1px; }
+  p, li { font-size:20px; line-height:1.4; color:var(--ink); }
+  ul { margin:0; padding-left:22px; }
+  li { margin-bottom:8px; }
+  .dim { color:var(--dim); }
+  .row { display:flex; gap:28px; flex:1; min-height:0; }
+  .col { flex:1; min-width:0; }
+  .shots { display:flex; gap:16px; align-items:flex-start; }
+  .shots img { height:5.2in; border-radius:14px; border:2px solid #3a2d55; box-shadow:0 12px 30px rgba(0,0,0,.5); }
+  .kpi { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:12px; }
+  .kpi div { background:var(--panel); border-radius:14px; padding:16px 18px; }
+  .kpi b { display:block; font-size:38px; color:var(--acc); }
+  .kpi span { font-size:16px; color:var(--dim); }
+  .foot { position:absolute; bottom:0.3in; left:0.7in; right:0.7in; display:flex; justify-content:space-between; font-size:13px; color:var(--dim); }
+  .cover { background: linear-gradient(rgba(21,15,30,.35), rgba(21,15,30,.92)), url(img/feature.png) center/cover; justify-content:flex-end; }
+  .cover .brand { display:flex; align-items:center; gap:22px; }
+  .cover img { width:120px; height:120px; border-radius:26px; }
+  .pill { display:inline-block; background:#2b2140; border:1px solid #4a3a6a; border-radius:999px; padding:4px 12px; font-size:15px; margin:0 6px 6px 0; color:var(--ink); }
+  table { border-collapse:collapse; width:100%; font-size:18px; }
+  td, th { text-align:left; padding:8px 10px; border-bottom:1px solid #35294d; vertical-align:top; }
+  th { color:var(--acc2); font-weight:600; }
+  .tight li { font-size:18px; margin-bottom:5px; }
+  .shots.small img { height:4.9in; }
+  .wide { width:100%; border-radius:14px; border:2px solid #3a2d55; }
+</style>
+</head>
+<body>
+
+<section class="slide cover">
+  <div class="brand">
+    <img src="img/icon.png" alt="">
+    <div>
+      <h1>Space Colony: Idle</h1>
+      <p class="dim" style="font-size:24px;margin:0">A pixel-art idle colony builder across six worlds — built for phones, tablets and foldables.</p>
+    </div>
+  </div>
+  <p style="margin-top:22px"><span class="pill">Android + iOS sim-ship</span><span class="pill">Free to play, no pay-to-win</span><span class="pill">EN · TR · JA</span><span class="pill">Solo developer — ShaumneGames</span></p>
+  <div class="foot"><span>Featuring pitch · September 2026</span><span>Package: com.shaumnegames.uzaykolonisi</span></div>
+</section>
+
+<section class="slide">
+  <h2>The hook</h2>
+  <div class="row">
+    <div class="col">
+      <p>You land on Mars with one solar field and a skeleton crew. A few hours later the lights never go out.</p>
+      <ul>
+        <li><b>Never left waiting.</b> Tap to push output, speed it up, or close the app — production keeps running offline.</li>
+        <li><b>Six worlds, six hazards.</b> Mars, Europa, Titan, Venus, Io, Callisto. Sandstorms, ice sheets, sulphur ash. Shields, drilling order and adaptation tiers decide whether the colony survives.</li>
+        <li><b>Prestige with a real ending.</b> Reset for Dark Matter, climb a 16-node tree, reach the Singularity — an uncapped final layer.</li>
+        <li><b>A story, quietly.</b> Twelve "Signals from Earth" letters and mission logs give the grind a reason.</li>
+      </ul>
+    </div>
+    <div class="shots"><img src="img/01-koloni.jpg" alt="Colony scene"><img src="img/07-sezon.jpg" alt="Season screen"></div>
+  </div>
+  <div class="foot"><span>Space Colony: Idle</span><span>2</span></div>
+</section>
+
+<section class="slide">
+  <h2>Core loop and depth</h2>
+  <div class="row">
+    <div class="col">
+      <h3>Loop</h3>
+      <p>Build modules → produce → boost or go offline → send crew on missions → research → unlock the next world → Prestige.</p>
+      <h3>Systems</h3>
+      <ul class="tight">
+        <li>Five modules per world, each paying for the next.</li>
+        <li>Crew of four classes: assign, level up, send on scouting, salvage and rescue runs.</li>
+        <li>26-node research tree; seasons with rotating goals.</li>
+      </ul>
+    </div>
+    <div class="shots small"><img src="img/02-yapilar.jpg" alt="Buildings"><img src="img/03-seferler.jpg" alt="Missions"><img src="img/05-arastirma.jpg" alt="Research"></div>
+  </div>
+  <div class="foot"><span>Space Colony: Idle</span><span>3</span></div>
+</section>
+
+<section class="slide">
+  <h2>Craft and technology</h2>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li><b>Hand-drawn pixel art</b> with 70 procedurally assembled sprites, a full day/night cycle and sky events (meteor showers, auroras, storms).</li>
+        <li><b>60 fps on low-end devices</b> via adaptive resolution — measured, not assumed.</li>
+        <li><b>Deterministic engine</b> (seeded RNG, injected clock) backed by 2,700+ unit tests and end-to-end tests on phone and tablet layouts.</li>
+        <li><b>Cloud save</b> with server-side validation rules; offline progress reconciles on return.</li>
+        <li><b>Modern Android:</b> targetSdk 36, edge-to-edge, predictive back, themed icon, Android 12 splash. <b>iOS:</b> iPhone + iPad, iOS 18 icon variants, haptics, in-app review.</li>
+      </ul>
+      <div class="kpi">
+        <div><b>70</b><span>procedural sprites</span></div>
+        <div><b>60 fps</b><span>adaptive resolution</span></div>
+        <div><b>2,700+</b><span>automated tests</span></div>
+        <div><b>3</b><span>layout modes: phone / tablet / dock</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Space Colony: Idle</span><span>4</span></div>
+</section>
+
+<section class="slide">
+  <h2>Built for large screens</h2>
+  <img class="wide" src="img/tablet-yatay.jpg" alt="Tablet landscape layout" style="max-height:4.6in;object-fit:cover">
+  <p style="margin-top:14px">Three layout modes: phone portrait, tablet (≥600 dp) with a persistent buildings panel, and dock/landscape (≥900 dp) with a left rail, the scene and a right panel. Resizable activity, no orientation lock on tablets, iPad native target.</p>
+  <div class="foot"><span>Space Colony: Idle</span><span>5</span></div>
+</section>
+
+<section class="slide">
+  <h2>Player-first by design</h2>
+  <div class="row">
+    <div class="col">
+      <h3>Fairness</h3>
+      <ul>
+        <li>No pay-to-win, no paid randomness, no loot boxes.</li>
+        <li>Subscription terms shown next to the button, restore purchases one tap away.</li>
+        <li>Rewarded ads are optional; kids never see ads or analytics.</li>
+      </ul>
+      <h3>Respect for attention</h3>
+      <ul>
+        <li>Notifications off by default, asked in context, max two per day, no guilt-trip copy (enforced in code).</li>
+        <li>12-step skippable tutorial that never soft-locks.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Privacy</h3>
+      <ul>
+        <li>Age gate → consent → ATT layered flow; minimal permissions.</li>
+        <li>Anonymous accounts by default; privacy policy in EN/TR/JA.</li>
+      </ul>
+      <h3>Accessibility</h3>
+      <ul>
+        <li>Full reduced-motion support; WCAG AA contrast gate fails the build.</li>
+        <li>Three text sizes, screen-reader live summary of the scene, colour-blind-checked palette, 44 px touch targets, axe-core scan in CI.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Space Colony: Idle</span><span>6</span></div>
+</section>
+
+<section class="slide">
+  <h2>Launch plan</h2>
+  <div class="row">
+    <div class="col">
+      <table>
+        <tr><th>Platforms</th><td>Google Play (phone, tablet, foldable) and App Store (iPhone, iPad) — simultaneous launch</td></tr>
+        <tr><th>Status</th><td>Closed test on Google Play since 28 Aug 2026; TestFlight build in testing</td></tr>
+        <tr><th>Target launch</th><td>Mid-September 2026, right after the closed-test period</td></tr>
+        <tr><th>Desired featuring</th><td>From early November 2026 (Indie Games Corner / New Games)</td></tr>
+        <tr><th>Languages</th><td>English, Turkish, Japanese at launch; Spanish, Portuguese (BR), German planned</td></tr>
+        <tr><th>Markets</th><td>Türkiye, United States, United Kingdom, Japan first; worldwide availability</td></tr>
+        <tr><th>Monetization</th><td>Free + IAP (13 products, 3 entitlements incl. a subscription) + optional rewarded ads</td></tr>
+        <tr><th>Live ops</th><td>Seasons every 2–4 weeks with Play Promotional Content and Apple In-App Events; reviews answered within 24 h</td></tr>
+      </table>
+    </div>
+    <div class="shots"><img src="img/06-komuta.jpg" alt="Command center"><img src="img/08-magaza.jpg" alt="Store"></div>
+  </div>
+  <div class="foot"><span>Space Colony: Idle</span><span>7</span></div>
+</section>
+
+<section class="slide">
+  <h2>Team and contact</h2>
+  <div class="row">
+    <div class="col">
+      <p><b>ShaumneGames</b> — solo developer studio (Emrecan Çetinkaya), no outside investment. Everything from engine to pixel art, localisation and store assets is in-house, with a heavy automated test and accessibility pipeline so a one-person team can ship like a studio.</p>
+      <ul>
+        <li>Contact: shaumnegames@gmail.com</li>
+        <li>Privacy policy and support: https://shaumne.github.io/uzay-kolonisi-gizlilik/</li>
+        <li>Google Play package: com.shaumnegames.uzaykolonisi</li>
+      </ul>
+      <p class="dim">Thank you for considering Space Colony: Idle for featuring.</p>
+    </div>
+    <div class="shots"><img src="img/04-murettebat.jpg" alt="Crew"></div>
+  </div>
+  <div class="foot"><span>Space Colony: Idle</span><span>8</span></div>
+</section>
+
+</body>
+</html>
