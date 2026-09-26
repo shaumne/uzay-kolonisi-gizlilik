@@ -75,24 +75,26 @@ footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);
 <div class="wrap">
 <nav><a href="./">Türkçe</a><a href="./en.html">English</a><a href="./ja.html" aria-current="page">日本語</a></nav>
 <h1>プライバシーポリシー｜宇宙コロニー Idle</h1>
-<p><strong>最終更新日：</strong>2026年9月15日</p>
+<p><strong>最終更新日：</strong>2026年9月26日</p>
 <hr>
 <h2>1. 運営者について</h2>
 <p>宇宙コロニー Idle（以下「本ゲーム」）は ShaumneGames が開発・提供しています。 本ポリシーは、本ゲームを利用する際にどのデータがどのような目的で扱われるかを 説明するものです。</p>
 <p>連絡先：<strong>shaumnegames@gmail.com</strong></p>
 <h2>2. 要約</h2>
-<ul><li>本ゲームは<strong>アカウント登録を求めません</strong>。氏名、メールアドレス、電話番号、 住所を収集しません。</li><li>ゲームの進行状況は<strong>まず端末内に</strong>保存されます。</li><li><strong>13歳未満であると申告した場合</strong>、広告と利用状況の計測は完全に停止し、 本ゲームはいかなるデータも収集しません。</li><li>クラウドバックアップは<strong>利用者が有効にした場合にのみ</strong>、匿名の識別子と ひもづけてサーバーに保存されます。</li></ul>
+<ul><li>本ゲームは<strong>アカウント登録を求めません</strong>。氏名、メールアドレス、電話番号、 住所を収集しません。</li><li>ゲームの進行状況は<strong>まず端末内に</strong>保存されます。</li><li>年齢の質問に回答するまで、利用状況の計測は行いません。</li><li><strong>13歳未満であると申告した場合</strong>、広告、利用状況の計測、クラウドへの自動 バックアップは完全に停止し、設定から自分でバックアップしない限り、本ゲームは いかなるデータも収集しません。</li><li>13歳以上の場合、セーブデータは匿名の識別子とひもづけて自動的にクラウドへ バックアップされます（4.5 参照）。</li></ul>
 <h2>3. 年齢の申告</h2>
 <p>初回起動時に生まれた年をおたずねします。<strong>生まれた年は保存しません</strong>。 端末内に保持されるのは、そこから導かれる年齢区分（「13歳未満」「13〜17歳」「18歳以上」）だけで、 これが次の動作を決めます。</p>
-<div class="tablewrap"><table><thead><tr><th>年齢区分</th><th>広告</th><th>パーソナライズ広告</th><th>利用状況の計測</th></tr></thead><tbody><tr><td>13歳未満</td><td>なし</td><td>なし</td><td>なし</td></tr><tr><td>13〜17歳</td><td>あり</td><td>なし</td><td>あり</td></tr><tr><td>18歳以上</td><td>あり</td><td>同意に応じて</td><td>あり</td></tr></tbody></table></div>
+<div class="tablewrap"><table><thead><tr><th>年齢区分</th><th>広告</th><th>パーソナライズ広告</th><th>利用状況の計測</th><th>クラウドへの自動バックアップ</th></tr></thead><tbody><tr><td>13歳未満</td><td>なし</td><td>なし</td><td>なし</td><td>なし</td></tr><tr><td>13〜17歳</td><td>あり</td><td>なし</td><td>あり</td><td>あり</td></tr><tr><td>18歳以上</td><td>あり</td><td>同意に応じて</td><td>あり</td><td>あり</td></tr></tbody></table></div>
 <p>この区分は、米国の COPPA および EU の GDPR における児童に関する規定に基づく ものです。</p>
 <h2>4. 取り扱うデータ</h2>
 <h3>4.1 端末内にとどまるデータ（送信されません）</h3>
 <ul><li><strong>セーブデータ</strong>：施設のレベル、エネルギー、ジェム、クルー、研究、クエストの 進行状況、設定（言語、テーマ、音、通知の設定）。</li><li><strong>年齢区分</strong>（前項参照）。</li><li><strong>セッション回数</strong>：インタースティシャル広告の表示間隔を決めるための単純な カウンターです。</li></ul>
 <p>これらは端末のローカルストレージ（IndexedDB／アプリの設定領域）に保存されます。 アプリを削除すると、これらのデータも削除されます。</p>
 <h3>4.2 利用状況の計測（アナリティクス）</h3>
-<p>13歳以上の利用者については、ゲーム改善のために<strong>イベント名とゲーム内の数値</strong>を 記録します。収集するイベントの全一覧は次のとおりです。</p>
-<p><code>session_start</code>, <code>tutorial_step</code>, <code>tutorial_complete</code>, <code>quest_complete</code>, <code>planet_unlock</code>, <code>prestige</code>, <code>daily_quest_claim</code>, <code>store_open</code>, <code>product_view</code>, <code>iap_purchase</code>, <code>iap_purchase_failed</code>, <code>ad_impression</code>, <code>ad_watched</code>, <code>notification_permission_result</code></p>
+<p><strong>Google Analytics for Firebase</strong> を利用しています。ゲームの起動時は停止して おり、13歳以上であると申告した後にのみ有効になります。13歳未満の利用者に対して 有効になることはありません。</p>
+<p>有効な場合、ゲーム改善のために<strong>イベント名とゲーム内の数値</strong>を記録します。 本ゲーム自身が送信するイベントは次のとおりです。</p>
+<p><code>app_session_open</code>, <code>tutorial_step</code>, <code>tutorial_complete</code>, <code>quest_complete</code>, <code>planet_unlock</code>, <code>planet_complete_ceremony</code>, <code>prestige</code>, <code>first_upgrade</code>, <code>first_mission</code>, <code>first_leap</code>, <code>daily_quest_claim</code>, <code>store_open</code>, <code>product_view</code>, <code>offer_shown</code>, <code>offer_dismissed</code>, <code>offer_purchased</code>, <code>iap_purchase</code>, <code>iap_purchase_failed</code>, <code>ad_impression</code>, <code>ad_watched</code>, <code>ad_rewarded_completed</code>, <code>notification_permission_result</code>, <code>notification_prompt_action</code>, <code>review_prompted</code>, <code>share_colony_card</code>, <code>save_integrity_failed</code></p>
+<p>Firebase はこのほか、標準のアプリイベント（初回起動、セッション開始、画面表示、 アプリの更新など）、ランダムなアプリインスタンス ID、端末の機種、OS の バージョン、アプリのバージョン、おおよその国を記録します。広告識別子は、 18歳以上でパーソナライズ広告に同意している場合を除き、計測には使われません。</p>
 <p>これらのイベントはゲームに関する情報のみを含みます（どの惑星が解放されたか、 チュートリアルの何番目のステップか、など）。<strong>個人情報、位置情報、連絡先、 写真、その他端末内のいかなる内容も読み取りません。</strong></p>
 <h3>4.3 広告</h3>
 <p>本ゲームには任意で視聴するリワード広告と、ときおり表示されるインタース ティシャル広告があります。広告は <strong>Google AdMob</strong> を通じて配信されます。 AdMob は広告の配信と不正防止のために、端末識別子や IP アドレスなどのデータを 処理することがあります。</p>
@@ -102,24 +104,26 @@ footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);
 <p>アプリ内購入は <strong>Google Play</strong> または <strong>App Store</strong> を通じて行われます。 支払い情報はストアに直接送られ、<strong>当方がカード情報を見ることも保存することも ありません。</strong> ストアからは「その商品が購入されたかどうか」の情報のみを 受け取ります。</p>
 <p>購入の検証と、購入済みの権利を端末間で同期するために <strong>RevenueCat</strong> （RevenueCat, Inc.）を利用しています。RevenueCat には、ストアから提供される 購入レシート／取引情報（商品 ID、購入日と有効期限、取引 ID）と、ランダムに 生成された匿名のアプリユーザー ID が送信されます。氏名、メールアドレス、 カード情報は送信されません。RevenueCat のプライバシーポリシー： https://www.revenuecat.com/privacy</p>
 <p><strong>軌道パス</strong>は毎月更新されるサブスクリプションです。自動的に更新され、 ストアのアカウントからいつでも解約できます。解約した場合も、現在の期間の 終了までは引き続き利用できます。</p>
-<h3>4.5 クラウドバックアップ（任意）</h3>
-<p>設定からクラウドバックアップを有効にすると、次のようになります。</p>
-<ul><li><strong>匿名の識別子</strong>が割り当てられます（氏名やメールアドレスとはひもづきません）。</li><li>セーブデータはその識別子のもとで <strong>Google Firebase</strong> のサーバーに保存されます。</li><li>バックアップは利用者自身の端末からのみ読み書きできます。</li><li>この機能を有効にしなければ、<strong>サーバーには何も送信されません。</strong></li></ul>
+<h3>4.5 クラウドバックアップ</h3>
+<p>13歳以上の場合、プレイ中にセーブデータが自動的にバックアップされます（最短で 30分に1回）。</p>
+<ul><li><strong>匿名の識別子</strong>が割り当てられます（氏名やメールアドレスとはひもづきません）。</li><li>セーブデータはその識別子のもとで <strong>Google Firebase</strong> のサーバーに保存されます。</li><li>バックアップは利用者自身の端末からのみ読み書きできます。</li><li>匿名の識別子は端末内に保存されます。アプリを削除したり機種変更したりすると、 新しいインストールには新しい識別子が割り当てられ、以前のバックアップには アクセスできなくなります。</li></ul>
+<p>13歳未満の場合、自動バックアップは行われません。「今すぐバックアップ」を 自分でタップしたときにのみバックアップされます。</p>
+<p><strong>コロニーリーグ。</strong> 13歳以上の場合、リーグ表を開くと、週間リーグのスコア、 選んだ紋章、同じ匿名の識別子が Firebase に送信されます。表には本名ではなく、 識別子から作られたコロニー名が表示されます。13歳未満の場合や年齢を 入力していない場合、リーグのために送信されるものはありません。表を見ることはできます。</p>
 <p>Firebase のプライバシーポリシー：https://firebase.google.com/support/privacy</p>
 <h3>4.6 通知</h3>
 <p>許可した場合、ゲームに関するリマインダー通知が届きます。これらの通知は <strong>端末上で</strong>予約されるものであり、サーバーから送信されるものではありません。 許可はいつでも端末の設定から解除できます。</p>
 <h2>5. 利用目的と法的根拠</h2>
-<div class="tablewrap"><table><thead><tr><th>目的</th><th>根拠（GDPR）</th></tr></thead><tbody><tr><td>ゲームの動作、進行状況の保存</td><td>契約の履行</td></tr><tr><td>購入の検証</td><td>契約の履行</td></tr><tr><td>利用状況の計測と不具合の調査</td><td>正当な利益</td></tr><tr><td>パーソナライズ広告</td><td>明示的な同意</td></tr><tr><td>クラウドバックアップ</td><td>明示的な同意（利用者が有効にします）</td></tr></tbody></table></div>
+<div class="tablewrap"><table><thead><tr><th>目的</th><th>根拠（GDPR）</th></tr></thead><tbody><tr><td>ゲームの動作、進行状況の保存</td><td>契約の履行</td></tr><tr><td>購入の検証</td><td>契約の履行</td></tr><tr><td>利用状況の計測と不具合の調査</td><td>正当な利益</td></tr><tr><td>パーソナライズ広告</td><td>明示的な同意</td></tr><tr><td>セーブデータのクラウドバックアップ</td><td>契約の履行（進行状況の保護）</td></tr></tbody></table></div>
 <h2>6. データの共有</h2>
 <p>データを販売することはありません。上記に挙げたサービス提供者 （Google AdMob、Google Firebase、RevenueCat、Google Play、Apple App Store）とのみ、 かつ記載された目的のためだけに共有されます。</p>
 <h2>7. 保存期間</h2>
-<ul><li>端末内のデータ：アプリを削除するまで。</li><li>クラウドバックアップ：機能を無効にするか、削除を依頼するまで。</li><li>アナリティクスのイベント：サービス提供者の標準的な保存期間。</li></ul>
+<ul><li>端末内のデータ：アプリを削除するまで。</li><li>クラウドバックアップ：削除を依頼するまで。</li><li>アナリティクスのイベント：サービス提供者の標準的な保存期間。</li></ul>
 <h2>8. 利用者の権利</h2>
 <p>お住まいの地域に応じて、次の権利が認められる場合があります。アクセス、訂正、 削除、処理への異議、データポータビリティ、同意の撤回。</p>
 <ul><li><strong>削除</strong>：ゲーム内のコマンド → 設定 → 「セーブデータを削除」で、端末内の すべてのデータが削除されます。クラウドバックアップの削除をご希望の場合は <strong>shaumnegames@gmail.com</strong> までご連絡ください。</li><li><strong>広告の同意の撤回</strong>：設定 → 広告設定。</li></ul>
 <p>ご依頼には遅くとも30日以内に回答します。</p>
 <h2>9. 子どものプライバシー</h2>
-<p>本ゲームは13歳未満の子どもを対象としていません。年齢の申告で13歳未満を 選択した場合、広告とアナリティクスは完全に停止します。当方の認識しないところで 子どものデータが収集されていることが判明した場合は、直ちに削除します。 そのような状況に気づかれた場合は <strong>shaumnegames@gmail.com</strong> までお知らせ ください。</p>
+<p>本ゲームは13歳未満の子どもを対象としていません。年齢の申告で13歳未満を 選択した場合、広告、アナリティクス、クラウドへの自動バックアップは完全に停止します。当方の認識しないところで 子どものデータが収集されていることが判明した場合は、直ちに削除します。 そのような状況に気づかれた場合は <strong>shaumnegames@gmail.com</strong> までお知らせ ください。</p>
 <h2>10. 変更について</h2>
 <p>本ポリシーが変更された場合、「最終更新日」を更新します。重要な変更がある 場合は、アプリ内でお知らせします。</p>
 <h2>11. お問い合わせ</h2>
