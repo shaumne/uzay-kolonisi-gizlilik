@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>개인정보 처리방침: Space Colony Idle</title>
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{
+  --ground:#FAF8F5; --surface:#FFFFFF; --surface-2:#F1ECE5;
+  --ink:#231A2E; --ink-soft:#574B63; --line:#E2D9CE;
+  --accent:#8A5A12; --fill-bg:#FFF0CC; --fill-ink:#6B4400;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#161020; --surface:#211830; --surface-2:#1A1327;
+    --ink:#EFE7F2; --ink-soft:#B5A8C0; --line:#372748;
+    --accent:#FFC857; --fill-bg:#3A2A0C; --fill-ink:#FFD98A;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#161020; --surface:#211830; --surface-2:#1A1327;
+  --ink:#EFE7F2; --ink-soft:#B5A8C0; --line:#372748;
+  --accent:#FFC857; --fill-bg:#3A2A0C; --fill-ink:#FFD98A;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:1.02rem; line-height:1.68; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+nav{display:flex;gap:.5rem;margin-bottom:2rem;flex-wrap:wrap}
+nav a{
+  font-size:.85rem;font-weight:600;text-decoration:none;
+  padding:.35rem .8rem;border-radius:6px;
+  border:1px solid var(--line);color:var(--ink-soft);background:var(--surface)
+}
+nav a[aria-current="page"]{border-color:var(--accent);color:var(--accent)}
+nav a:hover{border-color:var(--accent);color:var(--accent)}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 1.5rem;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:1.25rem;margin:2.4rem 0 .8rem;letter-spacing:-.01em;text-wrap:balance}
+h3{font-size:1.02rem;margin:1.6rem 0 .5rem;color:var(--ink-soft)}
+p,li{max-width:64ch}
+p{margin:0 0 1rem}
+ul{margin:0 0 1rem;padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
+a{color:var(--accent)}
+hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+blockquote{
+  margin:0 0 1.5rem;padding:.9rem 1.1rem;border-left:3px solid var(--accent);
+  background:var(--surface-2);border-radius:0 8px 8px 0;color:var(--ink-soft);font-size:.96rem
+}
+blockquote p:last-child{margin:0}
+code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:4px;padding:.05em .3em
+}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:0 0 1.5rem}
+table{border-collapse:collapse;width:100%;font-size:.94rem}
+th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--surface-2);font-size:.76rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft)}
+tbody tr:last-child td{border-bottom:0}
+mark.fill{
+  background:var(--fill-bg);color:var(--fill-ink);
+  padding:.05em .35em;border-radius:4px;font-weight:700
+}
+footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);
+  font-size:.88rem;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="./">Türkçe</a><a href="./en.html">English</a><a href="./ja.html">日本語</a><a href="./pt-BR.html">Português (Brasil)</a><a href="./es.html">Español</a><a href="./de.html">Deutsch</a><a href="./fr.html">Français</a><a href="./ko.html" aria-current="page">한국어</a></nav>
+<h1>개인정보 처리방침: Space Colony Idle</h1>
+<p><strong>최종 수정일:</strong> 2026년 9월 29일</p>
+<hr>
+<h2>1. 운영자 소개</h2>
+<p>Space Colony Idle(이하 &quot;게임&quot;)은 ShaumneGames가 개발하고 배포합니다. 본 방침은 게임을 플레이할 때 어떤 데이터가 처리되며 그 이유가 무엇인지 설명합니다.</p>
+<p>문의: <strong>shaumnegames@gmail.com</strong></p>
+<h2>2. 요약</h2>
+<ul><li>게임은 <strong>계정 생성을 요구하지 않습니다</strong>. 이름, 이메일, 전화번호, 주소를 수집하지 않습니다.</li><li>게임 진행 상황은 <strong>기본적으로 이용자의 기기에</strong> 저장됩니다.</li><li>나이 질문에 답하기 전에는 이용 분석 데이터를 전혀 수집하지 않습니다.</li><li><strong>13세 미만이라고 입력한 경우</strong> 광고, 이용 분석, 클라우드 자동 백업이 모두 꺼집니다. 이 경우 설정에서 직접 저장 데이터를 백업하지 않는 한 게임은 이용자로부터 어떤 데이터도 수집하지 않습니다.</li><li>13세 이상인 경우 저장 데이터는 익명 식별자로 클라우드에 자동 백업됩니다 (4.5 참조).</li></ul>
+<h2>3. 나이 확인</h2>
+<p>게임을 처음 실행하면 출생 연도를 묻습니다. <strong>출생 연도는 저장하지 않습니다.</strong> 출생 연도로 계산한 연령대(&quot;13세 미만&quot;, &quot;13-17세&quot;, &quot;18세 이상&quot;)만 기기에 보관되며, 이 연령대에 따라 다음이 결정됩니다.</p>
+<div class="tablewrap"><table><thead><tr><th>연령대</th><th>광고</th><th>맞춤형 광고</th><th>이용 분석</th><th>클라우드 자동 백업</th></tr></thead><tbody><tr><td>13세 미만</td><td>없음</td><td>없음</td><td>없음</td><td>없음</td></tr><tr><td>13-17세</td><td>있음</td><td>없음</td><td>있음</td><td>있음</td></tr><tr><td>18세 이상</td><td>있음</td><td>동의한 경우에만</td><td>있음</td><td>있음</td></tr></tbody></table></div>
+<p>이 구분은 미국의 COPPA와 EU 일반 개인정보 보호법(GDPR)의 아동 보호 조항에 따른 것입니다.</p>
+<h2>4. 처리하는 데이터</h2>
+<h3>4.1 기기에만 저장되는 데이터 (당사로 전송되지 않음)</h3>
+<ul><li><strong>저장 데이터</strong>: 모듈 레벨, 에너지, 보석, 대원, 연구, 퀘스트 진행 상황, 설정(언어, 테마, 사운드, 알림 설정).</li><li><strong>연령대</strong> (위 내용 참조).</li></ul>
+<p>이 데이터는 기기의 로컬 저장소(IndexedDB / 앱 환경설정)에 저장됩니다. 앱을 삭제하면 함께 삭제됩니다.</p>
+<h3>4.2 이용 분석</h3>
+<p>당사는 <strong>Google Analytics for Firebase</strong>를 사용합니다. 게임을 시작할 때는 꺼져 있으며, 13세 이상이라고 입력한 뒤에만 켜집니다. 13세 미만 이용자에게는 절대 켜지지 않습니다.</p>
+<p>켜져 있는 동안에는 게임 개선을 위해 <strong>이벤트 이름과 게임 내 수치</strong>가 기록됩니다. 게임이 직접 보내는 이벤트는 다음과 같습니다.</p>
+<p><code>app_session_open</code>, <code>tutorial_step</code>, <code>tutorial_complete</code>, <code>quest_complete</code>, <code>planet_unlock</code>, <code>planet_complete_ceremony</code>, <code>prestige</code>, <code>first_upgrade</code>, <code>first_mission</code>, <code>first_leap</code>, <code>daily_quest_claim</code>, <code>store_open</code>, <code>product_view</code>, <code>offer_shown</code>, <code>offer_dismissed</code>, <code>offer_purchased</code>, <code>iap_purchase</code>, <code>iap_purchase_failed</code>, <code>ad_impression</code>, <code>ad_watched</code>, <code>ad_rewarded_completed</code>, <code>notification_permission_result</code>, <code>notification_prompt_action</code>, <code>review_prompted</code>, <code>share_colony_card</code>, <code>save_integrity_failed</code>.</p>
+<p>Firebase는 이 밖에도 기본 앱 이벤트(예: 최초 실행, 세션 시작, 화면 조회, 앱 업데이트), 무작위로 생성된 앱 인스턴스 ID, 기기 모델, 운영체제 버전, 앱 버전, 대략적인 국가를 기록합니다. 광고 식별자는 18세 이상이면서 맞춤형 광고에 동의한 경우가 아니면 분석에 사용되지 않습니다.</p>
+<p>이 이벤트에는 게임 관련 정보만 담깁니다(예: 어떤 행성을 해금했는지, 튜토리얼의 몇 번째 단계에 도달했는지). <strong>개인정보, 위치, 연락처, 사진을 비롯해 기기에 있는 어떤 콘텐츠도 읽지 않습니다.</strong></p>
+<h3>4.3 광고</h3>
+<p>게임에는 선택해서 시청하는 보상형 광고와 가끔 표시되는 전면 광고가 있으며, <strong>Google AdMob</strong>을 통해 제공됩니다. AdMob은 광고 제공과 부정 행위 방지를 위해 기기 식별자, IP 주소 등의 데이터를 처리할 수 있습니다.</p>
+<ul><li><strong>유럽 경제 지역, 영국 또는 스위스에 있는 경우</strong> 광고가 표시되기 전에 동의 화면이 나타납니다. 선택 내용은 게임 설정에서 언제든지 바꿀 수 있습니다.</li><li><strong>동의하지 않으면</strong> 맞춤형이 아닌 광고만 표시됩니다.</li><li><strong>13세 미만인 경우</strong> 광고가 전혀 표시되지 않습니다.</li><li><strong>&quot;광고 제거&quot; 또는 궤도 패스 구독을 구매하면</strong> 광고가 표시되지 않습니다.</li></ul>
+<p>AdMob 개인정보처리방침: https://policies.google.com/technologies/ads</p>
+<h3>4.4 구매</h3>
+<p>인앱 구매는 <strong>Google Play</strong> 또는 <strong>App Store</strong>에서 처리됩니다. 결제 정보는 스토어로 바로 전달되며, <strong>당사는 카드 정보를 보거나 저장하지 않습니다.</strong> 스토어로부터는 특정 상품의 구매 여부만 전달받습니다.</p>
+<p>구매를 검증하고 구매한 혜택을 여러 기기에서 동기화하기 위해 <strong>RevenueCat</strong> (RevenueCat, Inc.)을 사용합니다. RevenueCat은 스토어가 제공하는 구매 영수증 / 거래 데이터(상품 ID, 구매일 및 만료일, 거래 ID)와 무작위로 생성된 익명 앱 사용자 ID를 받습니다. 이름, 이메일 주소, 카드 정보는 전송되지 않습니다. RevenueCat 개인정보처리방침: https://www.revenuecat.com/privacy</p>
+<p><strong>궤도 패스</strong>는 매월 자동으로 갱신되는 구독입니다. 스토어 계정에서 언제든지 해지할 수 있으며, 해지하더라도 현재 이용 기간이 끝날 때까지는 계속 이용할 수 있습니다.</p>
+<h3>4.5 클라우드 백업</h3>
+<p>13세 이상인 경우 플레이하는 동안 저장 데이터가 자동으로 백업됩니다(최대 30분에 한 번).</p>
+<ul><li>이용자에게 <strong>익명 식별자</strong>가 부여됩니다(이름이나 이메일과 연결되지 않습니다).</li><li>저장 데이터는 이 식별자로 <strong>Google Firebase</strong>에 저장됩니다.</li><li>백업은 이용자 본인의 기기에서만 읽고 쓸 수 있습니다.</li><li>익명 식별자는 기기에 저장됩니다. 게임을 삭제하거나 휴대폰을 바꾸면 새로 설치한 게임에는 새 식별자가 부여되며, 이전 백업에는 더 이상 접근할 수 없습니다.</li></ul>
+<p>13세 미만인 경우 자동 백업은 이루어지지 않습니다. 이용자가 직접 &quot;지금 백업&quot;을 누를 때에만 백업됩니다.</p>
+<p><strong>콜로니 리그.</strong> 13세 이상인 경우 리그 순위표를 열면 주간 리그 점수, 선택한 엠블럼, 같은 익명 식별자가 Firebase로 전송됩니다. 순위표에는 실명이 아니라 식별자로 생성한 콜로니 이름이 표시됩니다. 13세 미만이거나 나이를 입력하지 않은 경우 리그를 위해 전송되는 데이터는 없으며, 순위표는 그대로 볼 수 있습니다.</p>
+<p>Firebase 개인정보처리방침: https://firebase.google.com/support/privacy</p>
+<h3>4.6 알림</h3>
+<p>알림을 허용하면 게임이 리마인더 알림을 보냅니다. 이 알림은 서버에서 보내는 푸시 알림이 아니라 <strong>기기에서</strong> 예약됩니다. 허용은 기기 설정에서 언제든지 철회할 수 있습니다.</p>
+<h3>4.7 Google Play 게임즈 및 Game Center (업적, 클라우드 저장)</h3>
+<p>게임의 주요 달성 목표는 Google Play 게임즈(Android)와 Game Center(iOS)에서도 업적으로 표시됩니다. 이 기능은 기기에서 해당 서비스에 이미 로그인되어 있을 때만 작동하며, 게임이 로그인이나 계정 생성을 요구하는 일은 없습니다. 작동하는 경우 Google 또는 Apple은 해당 서비스의 플레이어 ID와 달성한 업적(횟수를 세는 업적은 진행도 포함)을 받습니다. 당사는 이용자의 Google 또는 Apple 계정 정보를 받지 않습니다. Play 게임즈 앱이나 iPhone의 Game Center 설정에서 언제든지 로그아웃하거나 서비스를 끌 수 있습니다.</p>
+<p>Android에서 Play 게임즈에 로그인되어 있는 동안에는 저장 데이터의 사본(기기에 저장된 것과 같은 게임 진행 상황)이 Google의 저장된 게임(Saved Games) 서비스를 통해 이용자의 Play 게임즈 계정에도 보관됩니다. 덕분에 같은 계정으로 새 기기에서 이어서 플레이할 수 있습니다. 이 사본은 당사가 아니라 Google이 보관하며, Play 게임즈 앱에서 삭제할 수 있습니다. iOS에서는 아직 지원되지 않습니다.</p>
+<p>13세 미만으로 입력한 경우 게임은 Play 게임즈나 Game Center와 전혀 통신하지 않으며, Play 게임즈 계정에 저장 데이터가 보관되지 않습니다.</p>
+<h2>5. 처리 목적 및 법적 근거</h2>
+<div class="tablewrap"><table><thead><tr><th>목적</th><th>근거(GDPR)</th></tr></thead><tbody><tr><td>게임 운영, 진행 상황 저장</td><td>계약의 이행</td></tr><tr><td>구매 검증</td><td>계약의 이행</td></tr><tr><td>이용 분석 및 오류 수정</td><td>정당한 이익</td></tr><tr><td>맞춤형 광고</td><td>동의</td></tr><tr><td>저장 데이터의 클라우드 백업</td><td>계약의 이행(진행 상황의 안전한 보관)</td></tr></tbody></table></div>
+<h2>6. 데이터 공유</h2>
+<p>당사는 데이터를 판매하지 않습니다. 데이터는 위에 명시한 서비스 제공업체 (Google AdMob, Google Firebase, RevenueCat, Google Play, Google Play 게임즈, Apple App Store, Apple Game Center)와만, 그리고 설명한 목적으로만 공유됩니다.</p>
+<h2>7. 보관 기간</h2>
+<ul><li>기기에 저장된 데이터: 앱을 삭제할 때까지.</li><li>클라우드 백업: 삭제를 요청할 때까지.</li><li>분석 이벤트: 서비스 제공업체의 기본 보관 기간 동안.</li></ul>
+<h2>8. 이용자의 권리</h2>
+<p>거주 지역에 따라 이용자는 데이터 열람, 정정, 삭제, 처리 반대, 이동 및 동의 철회를 요구할 권리를 가질 수 있습니다.</p>
+<ul><li><strong>삭제</strong>: 게임 내 사령부 -&gt; 설정 -&gt; &quot;저장 데이터 삭제&quot;를 선택하면 기기에 있는 모든 데이터가 삭제됩니다. 클라우드 백업 삭제를 원하시면 <strong>shaumnegames@gmail.com</strong>으로 연락해 주십시오.</li><li><strong>광고 동의 철회</strong>: 설정 -&gt; 광고 설정.</li></ul>
+<p>요청에는 늦어도 30일 이내에 답변합니다.</p>
+<h2>9. 아동의 개인정보</h2>
+<p>게임은 13세 미만 아동을 대상으로 하지 않습니다. 13세 미만으로 입력하면 광고, 분석, 클라우드 자동 백업, Play 게임즈 / Game Center 업적이 모두 꺼집니다. 당사가 모르는 사이에 아동의 데이터를 수집한 사실을 알게 되면 즉시 삭제합니다. 이러한 경우는 <strong>shaumnegames@gmail.com</strong>으로 알려 주십시오.</p>
+<h2>10. 변경</h2>
+<p>본 방침이 변경되면 &quot;최종 수정일&quot;이 갱신됩니다. 중요한 변경 사항은 앱 안에서 안내합니다.</p>
+<h2>11. 문의</h2>
+<p>문의: <strong>shaumnegames@gmail.com</strong></p>
+<footer>Uzay Kolonisi Idle</footer>
+</div>
+</body>
+</html>
