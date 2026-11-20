@@ -1,97 +1,13 @@
 <!doctype html>
-<!--
-  AKILLI MAGAZA BAGLANTISI (2026-11, Instagram Reels reklami icin).
-  Yayin: https://shaumne.github.io/uzay-kolonisi-gizlilik/get/
-  Uretici: scripts/build-privacy-site.mjs bu dosyayi privacy-site/get/index.html olarak kopyalar.
-
-  NE YAPAR: telefon Android ise Google Play'e, iPhone/iPad ise App Store'a
-  ANINDA gider (location.replace: geri tusu reklama doner, bu sayfaya degil).
-  Masaustu ve tanınmayan cihaz: iki magaza dugmesi gosterilir.
-
-  OLCUM: sayfanin kendi utm_* parametreleri magazaya tasinir.
-    Play      -> &referrer=utm_source=..&utm_medium=..&utm_campaign=..
-                 (Play Console edinme raporu + Firebase first_open kaynagi)
-    App Store -> ?pt=<APPLE_PT>&ct=<utm_campaign>&mt=8  (APPLE_PT doluysa;
-                 App Store Connect > Uygulama Analizi > Kampanyalar)
-  Ornek: .../get/?utm_source=instagram&utm_medium=paid&utm_campaign=reels_jp_2026_11
-
-  GitHub Pages statiktir: sunucu tarafi kod calismaz; yonlendirme tarayicida,
-  ilk boyamadan once (head icinde) yapilir.
--->
-<html lang="ja">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>宇宙コロニー：放置で惑星開拓 | Space Colony Idle</title>
-<meta name="description" content="火星にコロニーを築く放置ゲーム。基本プレイ無料。">
-<meta property="og:title" content="宇宙コロニー：放置で惑星開拓">
-<meta property="og:description" content="火星にコロニーを築く放置ゲーム。基本プレイ無料。">
-<meta property="og:image" content="https://shaumne.github.io/uzay-kolonisi-gizlilik/press/hero-1200x628.png">
-<meta property="og:type" content="website">
+<title>Space Colony Idle</title>
+<link rel="canonical" href="https://shaumnegames.com/spacecolony/get/">
 <meta name="robots" content="noindex">
-<script>
-(function () {
-  // App Store Connect saglayici kodu (pt). Bossa App Store'a duz link gider.
-  var APPLE_PT = ''
-  var PAKET = 'com.shaumnegames.uzaykolonisi'
-  var APPLE_ID = '6806013396'
-
-  var q = new URLSearchParams(location.search)
-  var temiz = function (v, yedek) { return (v || yedek).replace(/[^A-Za-z0-9_.-]/g, '').slice(0, 60) }
-  var kaynak = temiz(q.get('utm_source'), 'web')
-  var ortam = temiz(q.get('utm_medium'), 'link')
-  var kampanya = temiz(q.get('utm_campaign'), 'smartlink')
-
-  var play = 'https://play.google.com/store/apps/details?id=' + PAKET +
-    '&referrer=' + encodeURIComponent('utm_source=' + kaynak + '&utm_medium=' + ortam + '&utm_campaign=' + kampanya)
-  // Ulke kodu YOK: App Store kullanicinin kendi ulke magazasini acar.
-  var ios = 'https://apps.apple.com/app/id' + APPLE_ID +
-    (APPLE_PT ? '?pt=' + APPLE_PT + '&ct=' + kampanya + '&mt=8' : '')
-
-  var ua = navigator.userAgent || ''
-  var android = /android/i.test(ua)
-  // iPadOS 13+ masaustu Safari gibi "Macintosh" der; dokunmatik noktadan ayrilir.
-  var apple = /iphone|ipad|ipod/i.test(ua) || (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1)
-
-  window.__magaza = { play: play, ios: ios }
-  if (q.get('dur') === '1') return // test: yonlendirmeden sayfayi goster
-  if (android) location.replace(play)
-  else if (apple) location.replace(ios)
-})()
-</script>
-<style>
-  :root { color-scheme: dark; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-    background: #150f1e; color: #fff6dc; padding: 24px 16px;
-    font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; text-align: center;
-  }
-  main { max-width: 420px; width: 100%; }
-  h1 { font-size: 26px; margin: 0 0 6px; color: #f5c04a; }
-  p { margin: 0 0 24px; color: #bff7ea; }
-  a.btn {
-    display: block; margin: 12px 0; padding: 16px; border-radius: 999px; font-weight: 700;
-    font-size: 18px; text-decoration: none; background: #f5c04a; color: #140b24;
-  }
-  a.btn.ikincil { background: transparent; color: #fff6dc; border: 2px solid #e8b04a; }
-  small { display: block; margin-top: 20px; color: #9a8fb0; }
-</style>
+<meta http-equiv="refresh" content="0; url=https://shaumnegames.com/spacecolony/get/">
+<script>location.replace("https://shaumnegames.com/spacecolony/get/"+location.search+location.hash);</script>
 </head>
-<body>
-<main>
-  <h1>宇宙コロニー</h1>
-  <p>Space Colony Idle ・ 基本プレイ無料</p>
-  <a class="btn" id="ios" href="https://apps.apple.com/app/id6806013396">App Store でダウンロード</a>
-  <a class="btn ikincil" id="play" href="https://play.google.com/store/apps/details?id=com.shaumnegames.uzaykolonisi">Google Play で手に入れよう</a>
-  <small>Download on the App Store ・ Get it on Google Play</small>
-</main>
-<script>
-  // Dugmeler de olcum parametrelerini tasisin (masaustunden telefona gecenler icin).
-  if (window.__magaza) {
-    document.getElementById('ios').href = window.__magaza.ios
-    document.getElementById('play').href = window.__magaza.play
-  }
-</script>
-</body>
+<body><p><a href="https://shaumnegames.com/spacecolony/get/">https://shaumnegames.com/spacecolony/get/</a></p></body>
 </html>
